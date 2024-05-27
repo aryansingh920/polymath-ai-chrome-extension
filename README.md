@@ -1,40 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Polymath AI Chrome Extension
 
-## Getting Started
+This is a simple Chrome extension built with Next.js and Firebase to save and view URLs.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Save the current page URL with a single click.
+- View all saved URLs.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- Next.js
+- Firebase
+- Manifest V3
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## How to Run
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/polymath-ai-chrome-extension.git
+    cd polymath-ai-chrome-extension
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3. Run the development server:
+    ```bash
+    npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Load the extension in Chrome:
+    - Go to `chrome://extensions/`
+    - Enable "Developer mode"
+    - Click "Load unpacked" and select the `polymath-ai-chrome-extension/public` directory
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. Open the extension and start saving URLs!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Assumptions
 
-## Deploy on Vercel
+- Firebase Firestore is used for storing URLs.
+- Users need to manually enter the Firebase configuration in `firebaseConfig.js`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Demo Video
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Link to demo video](https://your-video-link.com)
